@@ -1,5 +1,5 @@
 variable "region" {
-  default = "us-east-1c"
+  default = "us-east-1"
 }
 
 variable "ami" {
