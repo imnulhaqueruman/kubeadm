@@ -28,7 +28,7 @@ resource "aws_instance" "k8s_master" {
   #   command = "ansible-playbook -i '${self.public_ip},' playbook.yml"
   # }
   provisioner "local-exec" {
-  command = "ansible-playbook -i '${aws_instance.k8s_master.private_ip},' -u ec2-user -i '52.0.108.20,' -b -v playbook.yml"
+  command = "ansible-playbook -i '${aws_instance.k8s_master.private_ip},' -u ec2-user -i '3.92.56.26,' -b -v playbook.yml"
   interpreter = ["/bin/bash", "-c"]
 }
 
